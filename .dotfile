@@ -1,2 +1,11 @@
-created dotfile
-`
+curl https://raw.githubusercontent.com/flenmel/devopsdotfiles/refs/head/main/install.sh | bash
+wget https://raw.githubusercontent.com/flenmel/devopsdotfiles/refs/head/main/.vimrc
+wget https://raw.githubusercontent.com/flenmel/devopsdotfiles/refs/head/main/.inputrc
+
+
+cd ~
+git clone https://github.com/flenmel/devopsdotfiles   .dotfiles
+cd .dotfiles
+./install.sh link
+ln -s .vimrc ~./vimrc
+ln -s .inputrc ~./inputrc
